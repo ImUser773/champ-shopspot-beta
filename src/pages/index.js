@@ -7,19 +7,6 @@ import { withReduxSaga } from '../store'
 import ProductContainer from '../modules/index/containers/ProductContainer'
 import { actionTypes, fetch} from '../modules/index/actions/product-action'
 
-const settings = {
-  arrows: false,
-  autoplay: true,
-  accessibility: true,
-  dots: false,
-  infinite: true,
-  autoplaySpeed: 5000,
-  speed: 1500,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  pauseOnHover: true,
-  swipe: true,
-}
 
 class Index extends Component {
 
@@ -31,10 +18,6 @@ class Index extends Component {
   render() {
     return (
       <ShopspotLayout title="shopspot">
-
-        <Slides {...settings}>
-          {/* <div> 123 </div> */}
-        </Slides>
 
         <CarouselStyled prevIcon={<div> </div>} nextIcon={<div> </div>} slide={true} interval={10000}>
           <Carousel.Item>
@@ -48,10 +31,8 @@ class Index extends Component {
           </Carousel.Item>
         </CarouselStyled>
 
-        {/* <MockDiv> */}
-          <ProductContainer/>
+        <ProductContainer/>
 
-        {/* </MockDiv> */}
       </ShopspotLayout>
     )
   }

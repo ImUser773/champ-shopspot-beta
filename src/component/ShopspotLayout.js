@@ -6,8 +6,6 @@ import styled from 'styled-components'
 import { Form, FormGroup, InputGroup, FormControl, DropdownButton, MenuItem, Dropdown, Glyphicon, Button } from 'react-bootstrap'
 import { StickyContainer, Sticky } from 'react-sticky'
 
-const a = true
-
 class ShopspotLayout extends Component {
 
   render() {
