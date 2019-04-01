@@ -8,8 +8,8 @@ export default function reducer (state = {}, action) {
         ...state
       }
     case actionTypes.FETCH_SUCCESS:
-      ('reducer work')
-      // console.log(action)
+      console.log('reducer work')
+      console.log(action)
       return {
         ...state,
         product: action.payload

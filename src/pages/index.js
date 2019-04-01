@@ -17,6 +17,7 @@ class Index extends Component {
 
   render() {
     return (
+      // <div> <ProductContainer/> </div>
       <ShopspotLayout title="shopspot">
 
         <CarouselStyled prevIcon={<div> </div>} nextIcon={<div> </div>} slide={true} interval={10000}>
@@ -33,6 +34,8 @@ class Index extends Component {
 
         <ProductContainer/>
 
+
+
       </ShopspotLayout>
     )
   }
@@ -40,7 +43,7 @@ class Index extends Component {
 
 export default withReduxSaga(Index)
 
-const ImageStyled = styled.image`
+const ImageStyled = styled.img`
   width: 100%;
 `
 

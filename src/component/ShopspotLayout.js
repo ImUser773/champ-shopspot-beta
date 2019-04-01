@@ -154,7 +154,7 @@ const SearchButtonStyled = styled(Button)`
   }
 `
 
-const Logo = styled.image`
+const Logo = styled.img`
   width: 245px;
   @media only screen and (max-width: 768px) {
     width: 160px;
